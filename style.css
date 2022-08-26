@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&display=swap");
+
+:root {
+  --text: #e6e4e4;
+  --black_text: #313235;
+  --light_grey: #a1a2a6;
+  --medium_grey: #8a8a8b;
+  --dark_grey: #3a3b41;
+  --highlight_yellow: #f9ef2a;
+  --normal_yellow: #f2c335;
+  --red: #f2294c;
+  --green: #4ef26c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: transparent;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #151516;
+}
+
+h1 {
+  color: var(--normal_yellow);
+  text-align: center;
+}
+
+.navigator {
+  height: 4rem;
+  width: 100%;
+  background-color: var(--dark_grey);
+  box-shadow: 0px 5px 15px 3px rgba(0, 0, 0, 0.36);
+  position: fixed;
+  top: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  z-index: 100;
+}
+
+.navigator a {
+  text-decoration: none;
+  color: var(--text);
+  padding-right: 1rem;
+}
+
+a:active {
+  color: var(--highlight_yellow);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.about_me {
+  height: 100vh;
+  background-color: #151516;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.introduction {
+  background-color: #151516;
+  border-radius: 0.6rem;
+  color: var(--normal_yellow);
+  /* height: 80vh; */
+  gap: 1rem;
+  /* width: 50%; */
+  padding-top: 1rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.introduction p {
+  line-height: 1.5rem;
+}
+.introduction h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  padding-bottom: 2rem;
+}
+.letter {
+  padding: 0;
+  margin: 0;
+}
+
+.type_cursor {
+  display: inline;
+  position: relative;
+  z-index: 0;
+  animation-name: flickering;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+}
+
+@keyframes flickering {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.cv_photo {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 2px var(--normal_yellow) solid;
+  background-image: url("neinteles.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}
+
+.portfolio {
+  height: 100vh;
+  background: linear-gradient(180deg, #151516 0%, rgba(49, 50, 53, 1) 90%);
+  /* position: relative;
+  z-index: 12; */
+}
+
+.corners {
+  width: 80%;
+  height: 90%;
+  padding-top: 50px;
+  margin: 0 auto;
+  border: 8px solid transparent;
+  --g: #0000 90deg, var(--normal_yellow) 0;
+  background: conic-gradient(from 90deg at top 10px left 10px, var(--g)) 0 0,
+    conic-gradient(from 180deg at top 10px right 10px, var(--g)) 100% 0,
+    conic-gradient(from 0deg at bottom 10px left 10px, var(--g)) 0 100%,
+    conic-gradient(from -90deg at bottom 10px right 10px, var(--g)) 100% 100%;
+  background-size: 100px 100px;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+}
+
+/* .corners:hover {
+  border: 8px solid transparent;
+  --g: #0000 90deg, var(--normal_yellow) 0;
+  background: conic-gradient(from 90deg at top 10px left 10px, var(--g)) 0 0,
+    conic-gradient(from 180deg at top 10px right 10px, var(--g)) 100% 0,
+    conic-gradient(from 0deg at bottom 10px left 10px, var(--g)) 0 100%,
+    conic-gradient(from -90deg at bottom 10px right 10px, var(--g)) 100% 100%;
+  background-size: 100px 100px;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+} */
+
+.resume {
+  height: 100vh;
+  background-color: var(--black_text);
+}
+.contact {
+  height: 100vh;
+  background: linear-gradient(180deg, rgba(49, 50, 53, 1) 0%, #151516 10%);
+  background-size: cover;
+}
+
+.container {
+  padding: 6rem 3rem 0rem 3rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--dark_grey);
+  background-color: var(--dark_grey);
+  /* border-radius: 10px; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--normal_yellow);
+  /* border-radius: 10px; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #967922;
+}
