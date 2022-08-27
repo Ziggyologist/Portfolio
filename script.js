@@ -4,7 +4,7 @@ const projects = [
     project_name: "Cat Finder",
     project_description:
       "LoCAT is a web application designed to help users find and report missing cats. The app makes use of the Geolocation API, as users can pin on the map the precise location and time where they spotted a cat. Additionally, the color, breed, and other details can be provided about the cat via a form. The missing cat profile is then updated to the database, and users can search the database for a specific cat (by color, race etc). \n This app was developped using HTML, CSS, JavaScript, and the Leaflet library. The icons displayed on the map are created by me in Adobe Illustrator. This app was made using the Object Oriented Programming paradigm, with ES6 classes.",
-    project_photo: "./catAP.PNG",
+    project_photo: "./catAp.PNG",
     photo_description: "screenshot of cat finder application",
     project_url: "https://ziggyologist.github.io/Cat-Finder/",
   },
@@ -56,7 +56,8 @@ const insertProject = function (project) {
   const html = `
   <h2>${project.project_name}</h2> <br/>
   <p>${project.project_description}</p> <br/>
-<div class="image_container">  <img class="app_image" src="${project.project_photo}" alt="${project.photo_description}"> </div>
+<div class="image_container">  
+<img class="app_image" src="${project.project_photo}" alt="${project.photo_description}"> </div>
  <br />
   <p><a href="${project.project_url}" target="_blank">Click here to check out the project</a> </p>
   `;
