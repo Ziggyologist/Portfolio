@@ -324,6 +324,7 @@ a:focus {
 
   .introduction {
     line-height: 1rem;
+    padding-top: 2rem;
   }
 
   .portfolio_projects {
@@ -354,5 +355,13 @@ a:focus {
     justify-content: center;
     margin-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .about_me {
+    height: auto;
+    padding-top: 8rem;
+  }
+  .portfolio {
+    height: auto;
   }
 }
