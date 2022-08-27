@@ -14,6 +14,7 @@ const projects = [
     project_description:
       "The bullet journal app is very similar to the classical paper journal. The users can rate their daily mood by coloring a mountain, insert habits to track, and add diary entries. This app was created using HTML, CSS, and JavaScript, and all the illustrations and SVGs were done in Adobe Illustrator and are originals. ",
     project_photo: "./bulletAp.PNG",
+    project_photo2: "./bulletAp2.PNG",
     photo_description: "screenshot of bullet journal application",
     project_url: "https://ziggyologist.github.io/MoodTrackerApp/main_page.html",
   },
@@ -55,17 +56,21 @@ const insertProject = function (project) {
   const html = `
   <h2>${project.project_name}</h2> <br/>
   <p>${project.project_description}</p> <br/>
-  <img src="${project.project_photo}" alt="${project.photo_description}"> <br />
+<div class="image_container">  <img class="app_image" src="${project.project_photo}" alt="${project.photo_description}"> </div>
+ <br />
   <p><a href="${project.project_url}" target="_blank">Click here to check out the project</a> </p>
   `;
+
   projectDetails.innerHTML = html;
 };
+
 // insertProject(projects[0]);
 // ////////Events
+let clicked = false;
 projectLinks.forEach((link, index) =>
   link.addEventListener("click", function (e) {
     e.preventDefault();
-    console.log(link);
+    // console.log(link);
     insertProject(projects[index]);
   })
 );
