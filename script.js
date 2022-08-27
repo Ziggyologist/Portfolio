@@ -55,7 +55,7 @@ const insertProject = function (project) {
   `;
   projectDetails.innerHTML = html;
 };
-
+// insertProject(projects[0]);
 // ////////Events
 projectLinks.forEach((link, index) =>
   link.addEventListener("click", function (e) {
