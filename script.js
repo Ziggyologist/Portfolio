@@ -13,7 +13,7 @@ const projects = [
     project_name: "Bullet Journal",
     project_description:
       "The bullet journal app is very similar to the classical paper journal. The users can rate their daily mood by coloring a mountain, insert habits to track, and add diary entries. This app was created using HTML, CSS, and JavaScript, and all the illustrations and SVGs were done in Adobe Illustrator and are originals. ",
-    project_photo: "./BulletAp.GIF",
+    project_photo: "./BulletAp.gif",
     photo_description: "screenshot of bullet journal application",
     project_url: "https://ziggyologist.github.io/MoodTrackerApp/main_page.html",
   },
