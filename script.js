@@ -119,21 +119,24 @@ document.addEventListener("mousemove", function (e) {
 });
 console.log(cursor);
 const aboutMe = document.querySelectorAll("p");
-aboutMe.forEach(p => {
-  p.addEventListener("mouseover", function () {
-    cursor.classList.add("blackCol");
-  });
-  p.addEventListener("mouseout", function () {
-    cursor.classList.remove("blackCol");
-  });
-});
 
 // setInterval(function () {
 //   console.log("interval");
 //   cursor.classList.toggle("blueCol");
 // }, 5000);
 
-document.addEventListener("click", function () {
+document.addEventListener("dblclick", function () {
   console.log("click");
   cursor.classList.toggle("clicked");
 });
+
+if (cursor.classList.contains("clicked")) {
+  aboutMe.forEach(p => {
+    p.addEventListener("mouseover", function () {
+      cursor.classList.add("blackCol");
+    });
+    p.addEventListener("mouseout", function () {
+      cursor.classList.remove("blackCol");
+    });
+  });
+}
