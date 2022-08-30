@@ -43,6 +43,9 @@ const cornerBorder = document.querySelectorAll(".corners");
 const projectLinks = document.querySelectorAll(".projects_list a");
 const projectDetails = document.querySelector(".project_details");
 
+const circles = document.querySelectorAll("circle");
+const background = document.querySelectorAll(".background");
+
 navLinks.forEach((link, index) =>
   link.addEventListener("click", function (e) {
     e.preventDefault();
@@ -74,3 +77,63 @@ projectLinks.forEach((link, index) =>
     insertProject(projects[index]);
   })
 );
+
+circles.forEach((circle, index) => {
+  console.log(circle);
+
+  circle.addEventListener("click", function () {
+    console.log("clicked");
+    circle.style.fill = "#f2294c";
+    console.log(circle.attributes.cx);
+    // console.log(circle.attributes[1].value);
+    console.log(
+      circle.attributes.cx.value,
+      circle.attributes.cy.value,
+      circle.attributes.r.value
+    );
+    circle.attributes.cx.value++;
+    // circle.attributes.cy.value++;
+    // circle.attributes.r.value = Number(circle.attributes.r.value * 1.2);
+  });
+});
+
+// console.log(circles);
+
+background.forEach(div => {
+  // console.log(div);
+  let random = Math.trunc(Math.random() * 100 + 1);
+  let random2 = Math.trunc(Math.random() * 100 + 1);
+
+  div.style.top = `${random}%`;
+  div.style.left = `${random2}%`;
+  console.log(random);
+});
+
+// CURSOR
+
+const cursor = document.querySelector(".cursor");
+const cursor2 = document.querySelector(".cursor2");
+const headings = document.querySelectorAll("h1");
+document.addEventListener("mousemove", function (e) {
+  cursor.style.cssText = `left: ${e.clientX}px; top: ${e.clientY}px`;
+});
+console.log(cursor);
+const aboutMe = document.querySelectorAll("p");
+aboutMe.forEach(p => {
+  p.addEventListener("mouseover", function () {
+    cursor.classList.add("blackCol");
+  });
+  p.addEventListener("mouseout", function () {
+    cursor.classList.remove("blackCol");
+  });
+});
+
+// setInterval(function () {
+//   console.log("interval");
+//   cursor.classList.toggle("blueCol");
+// }, 5000);
+
+document.addEventListener("click", function () {
+  console.log("click");
+  cursor.classList.toggle("clicked");
+});
