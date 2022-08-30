@@ -50,23 +50,23 @@ img {
   transform: translate(-50%, -50%);
   /* transition: 0.05s; */
   opacity: 0.5;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  box-shadow: none;
+}
+
+.blackCol {
+  background-color: black;
+  transition: ease-in-out;
+  box-shadow: none;
+}
+.clicked {
   width: 30px;
   height: 30px;
   background-color: black;
   box-shadow: #fff 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px,
     red 0 -18px 40px, -1px 5px 15px 5px rgba(0, 0, 0, 0);
-}
-
-.blackCol {
-  background-color: white;
-  transition: ease-in-out;
-  box-shadow: none;
-}
-.clicked {
-  width: 40px;
-  height: 40px;
-  background-color: white;
-  box-shadow: none;
 }
 
 /* .cursor2 {

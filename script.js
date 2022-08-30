@@ -130,13 +130,11 @@ document.addEventListener("dblclick", function () {
   cursor.classList.toggle("clicked");
 });
 
-if (cursor.classList.contains("clicked")) {
-  aboutMe.forEach(p => {
-    p.addEventListener("mouseover", function () {
-      cursor.classList.add("blackCol");
-    });
-    p.addEventListener("mouseout", function () {
-      cursor.classList.remove("blackCol");
-    });
+aboutMe.forEach(p => {
+  p.addEventListener("mouseover", function () {
+    cursor.classList.add("blackCol");
   });
-}
+  p.addEventListener("mouseout", function () {
+    cursor.classList.remove("blackCol");
+  });
+});
