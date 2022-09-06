@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 633.37 385.94">
+  <title>Mountain</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <g>
+          <polygon points="42.58 383.44 412.57 383.44 233.57 95.44 42.58 383.44" style="fill: #f2f2f2;stroke: #2d2d2d;stroke-miterlimit: 10"/>
+          <line x1="233.58" y1="95.44" x2="144.88" y2="381.15" style="fill: #f2f2f2;stroke: #2d2d2d;stroke-miterlimit: 10"/>
+        </g>
+        <g>
+          <polygon points="289.57 385.44 574.58 385.44 431.57 1.44 289.57 385.44" style="fill: #f2f2f2;stroke: #2d2d2d;stroke-miterlimit: 10"/>
+          <line x1="431.58" y1="1.44" x2="361.65" y2="385.22" style="fill: #f2f2f2;stroke: #2d2d2d;stroke-miterlimit: 10"/>
+        </g>
+        <g>
+          <polygon points="2.58 385.44 542.58 385.44 287.57 270.44 2.58 385.44" style="fill: #f2f2f2;stroke: #2d2d2d;stroke-miterlimit: 10"/>
+          <polygon points="287.57 270.44 172.94 385.12 395.97 385.12 287.57 270.44" style="fill: #f2f2f2;stroke: #2d2d2d;stroke-miterlimit: 10"/>
+        </g>
+        <g>
+          <polygon points="425.57 385.44 632.58 385.44 554.58 222.44 425.57 385.44" style="fill: #f2f2f2;stroke: #2d2d2d;stroke-miterlimit: 10"/>
+          <line x1="492.07" y1="385.05" x2="554.58" y2="222.44" style="fill: #f2f2f2;stroke: #2d2d2d;stroke-miterlimit: 10"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

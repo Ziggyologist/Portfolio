@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.sun {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: rgb(250, 211, 85);
+  position: fixed;
+  top: 10%;
+  right: 10%;
+}
+
+.container {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  /* background-color: brown; */
+}
+
+.cloud {
+  border: 2px solid red;
+  position: sticky;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+
+.cloud svg {
+  height: 150px;
+  width: 150px;
+}
+
+.cloud:nth-child(2) svg {
+  margin-right: 100px;
+  fill: red;
+}
+
+.footer {
+  display: flex;
+  height: auto;
+  /* justify-content: flex-end;
+  align-items: flex-end; */
+}
+.mountain {
+  height: auto;
+  width: 500px;
+  z-index: 5;
+  border: 1px white solid;
+  justify-self: flex-end;
+  align-self: flex-end;
+  margin-bottom: 1px;
+}

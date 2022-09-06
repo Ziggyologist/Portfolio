@@ -35,6 +35,15 @@ const projects = [
     photo_description: "screenshot of banking application",
     project_url: "https://ziggyologist.github.io/BankApp/",
   },
+  {
+    id: "joke_teller",
+    project_name: "Joke Teller",
+    project_description:
+      "This app makes use of the JokeAPI to generate programming jokes, which are then read out loud. The reading is done through the text-to-voice VoiceRSS API. The robot animation is taken from giphy.",
+    project_photo: "./joke_teller.PNG",
+    photo_description: "screenshot of joke telling application",
+    project_url: "https://ziggyologist.github.io/JokeTeller/",
+  },
 ];
 
 const navLinks = document.querySelectorAll(".nav_link");
