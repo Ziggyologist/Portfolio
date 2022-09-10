@@ -39,10 +39,19 @@ const projects = [
     id: "joke_teller",
     project_name: "Joke Teller",
     project_description:
-      "This app makes use of the JokeAPI to generate programming jokes, which are then read out loud. The reading is done through the text-to-voice VoiceRSS API. The robot animation is taken from giphy.",
-    project_photo: "./joke_teller.PNG",
+      "This app makes use of the JokeAPI to generate programming jokes, which are then read out loud by a text-to-voice API (VoiceRSS API). The app also has a dark mode and a light mode, and the user preference is saved in the local storage. The robot animation is taken from giphy.",
+    project_photo: "./robots.gif",
     photo_description: "screenshot of joke telling application",
     project_url: "https://ziggyologist.github.io/JokeTeller/",
+  },
+  {
+    id: "music_player",
+    project_name: "Music Player",
+    project_description:
+      "This is a custom music player made using HTML Audio DOM methods, CSS, and JavaScript. The background was made in Adobe Illustrator.",
+    project_photo: "./music_player.PNG",
+    photo_description: "screenshot of music player application",
+    project_url: "https://ziggyologist.github.io/Music_Player/",
   },
 ];
 
@@ -135,7 +144,7 @@ const aboutMe = document.querySelectorAll("p");
 // }, 5000);
 
 document.addEventListener("dblclick", function () {
-  console.log("click");
+  console.log("click magic");
   cursor.classList.toggle("clicked");
 });
 
