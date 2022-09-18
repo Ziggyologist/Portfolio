@@ -53,6 +53,15 @@ const projects = [
     photo_description: "screenshot of music player application",
     project_url: "https://ziggyologist.github.io/Music_Player/",
   },
+  {
+    id: "paint_clone",
+    project_name: "Paint Clone",
+    project_description:
+      "This web application was made using HTML Canvas, CSS, and JavaScript. The icons were added from Font Awesome and for the custom color picker I have used the JSColor.js library. The app replicates some of the basic tools from the classic Windows Paint, such as the bucket tool, the brush, and the eraser. The user can also save the painting in Local Storage or clear it, as well as download the painting as a .jpeg file.",
+    project_photo: "./paint_clone.PNG",
+    photo_description: "screenshot of paint clone application",
+    project_url: "https://ziggyologist.github.io/PaintClone/",
+  },
 ];
 
 const navLinks = document.querySelectorAll(".nav_link");
