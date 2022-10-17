@@ -69,7 +69,7 @@ const projects = [
       "This is a single-page application done using React.JS. The app allows the user to add expenses and put them into categories. The user can then filter through the years, and for each year a chart is generated with the monthly expenses. The chart is filled more or less, according to how much money the user spent in the respective month.",
     project_photo: "./react_budget.PNG",
     photo_description: "screenshot of react budget SPA",
-    project_url: "https://ziggyologist.github.io/react-app/",
+    project_url: "https://github.com/Ziggyologist/React-Expense-Tracker",
   },
 ];
 
